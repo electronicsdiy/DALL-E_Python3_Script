@@ -8,7 +8,7 @@ doraemon.jpg
 electron@diynoMacBook-Pro Desktop % open doraemon.jpg 
 ```
 
-
+https://user-images.githubusercontent.com/87643752/130586549-beb07952-24ae-418c-beab-1c14ca611e87.png
 
 
 ```bash:Terminal
@@ -42,6 +42,9 @@ electron@diynoMacBook-Pro Desktop %
 electron@diynoMacBook-Pro Desktop % open nozomi.jpg 
 electron@diynoMacBook-Pro Desktop % 
 ```
+
+https://user-images.githubusercontent.com/87643752/130586573-035a2380-acdb-4385-9cd1-bec76ee705e9.png
+
 
 ```bash:Terminal
 electron@diynoMacBook-Pro Desktop % python3 display_textlabeLprob_on_image.py --image_file nozomi.jpg 'cat' 'dog' 'human' 'woman' 'girl'
