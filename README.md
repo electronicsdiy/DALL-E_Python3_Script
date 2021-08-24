@@ -27,27 +27,26 @@ Terminalで次の１行を入力して、エンターキーを押すと推論処
 ### GitHubから資源を取得
 
 ```bash:Terminal
-electron@diynoMacBook-Pro Desktop % git clone 
-electron@diynoMacBook-Pro Desktop % 
+% git clone 
 ```
 
 ### 取得したディレクトリに移動
 
 ```bash:Terminal
-electron@diynoMacBook-Pro Desktop % cd DALL-E_Python3_Script
-electron@diynoMacBook-Pro DALL-E_Python3_Script % ls
+% cd DALL-E_Python3_Script
+DALL-E_Python3_Script % ls
 README.md				display_textlabelprob_on_image.py
-electron@diynoMacBook-Pro DALL-E_Python3_Script % 
+DALL-E_Python3_Script % 
 ```
 
 
 ### 画像ファイルを用意
 
 ```bash:Terminal
-electron@diynoMacBook-Pro DALL-E_Python3_Script % ls
+DALL-E_Python3_Script % ls
 README.md				doraemon.jpg
 display_textlabelprob_on_image.py	nozomi.jpg
-electron@diynoMacBook-Pro DALL-E_Python3_Script %
+DALL-E_Python3_Script %
 ```
 
 ### （ 画像１ ）
@@ -55,9 +54,9 @@ electron@diynoMacBook-Pro DALL-E_Python3_Script %
 - 画像は、取り扱いたい任意の画像ファイルを用意してください。
  
 ```bash:Terminal
-electron@diynoMacBook-Pro DALL-E_Python3_Script % ls doraemon.jpg                                                          
+DALL-E_Python3_Script % ls doraemon.jpg                                                          
 doraemon.jpg
-electron@diynoMacBook-Pro DALL-E_Python3_Script % open doraemon.jpg 
+DALL-E_Python3_Script % open doraemon.jpg 
 ```
 
 ![](https://user-images.githubusercontent.com/87643752/130586549-beb07952-24ae-418c-beab-1c14ca611e87.png)
@@ -68,8 +67,8 @@ electron@diynoMacBook-Pro DALL-E_Python3_Script % open doraemon.jpg
 
 
 ```bash:Terminal
-electron@diynoMacBook-Pro DALL-E_Python3_Script % open nozomi.jpg 
-electron@diynoMacBook-Pro DALL-E_Python3_Script %
+DALL-E_Python3_Script % open nozomi.jpg 
+DALL-E_Python3_Script %
 ```
 
 ![](https://user-images.githubusercontent.com/87643752/130586573-035a2380-acdb-4385-9cd1-bec76ee705e9.png)
@@ -81,16 +80,16 @@ electron@diynoMacBook-Pro DALL-E_Python3_Script %
 - コマンドライン引数：第２引数以降に、１つ以上のラベルを文字列で与える
 
 ```bash:Terminal
-electron@diynoMacBook-Pro DALL-E_Python3_Script % python3 display_textlabelprob_on_image.py --image_file doraemon.jpg 'cat' 'dog'
+DALL-E_Python3_Script % python3 display_textlabelprob_on_image.py --image_file doraemon.jpg 'cat' 'dog'
 次の画像を解析します。：　 doraemon.jpg
 次のラベルの該当確率を推定します。　：　 ['cat', 'dog']
 ラベル名： cat   該当確率： 91.0%
 ラベル名： dog   該当確率： 9.0%
-electron@diynoMacBook-Pro DALL-E_Python3_Script %
+DALL-E_Python3_Script %
 ```
 
 ```bash:Terminal
-electron@diynoMacBook-Pro DALL-E_Python3_Script % python3 display_textlabelprob_on_image.py --image_file doraemon.jpg 'cat' 'dog' 'human' 'pig' '
+DALL-E_Python3_Script % python3 display_textlabelprob_on_image.py --image_file doraemon.jpg 'cat' 'dog' 'human' 'pig' '
 raccoon dog' 'house' 'robot' 'sky'
 次の画像を解析します。：　 doraemon.jpg
 次のラベルの該当確率を推定します。　：　 ['cat', 'dog', 'human', 'pig', '\nraccoon dog', 'house', 'robot', 'sky']
@@ -102,13 +101,13 @@ raccoon dog' 'house' 'robot' 'sky'
 raccoon dog   該当確率： 1.0%
 ラベル名： house   該当確率： 1.0%
 ラベル名： robot   該当確率： 18.0%
-electron@diynoMacBook-Pro DALL-E_Python3_Script %
+DALL-E_Python3_Script %
 ```
 
 ### スクリプトを実行 （ 佐々木希の画像 ）
 
 ```bash:Terminal
-electron@diynoMacBook-Pro DALL-E_Python3_Script % python3 display_textlabelprob_on_image.py --image_file nozomi.jpg 'cat' 'dog' 'human' 'woman' 'girl'
+DALL-E_Python3_Script % python3 display_textlabelprob_on_image.py --image_file nozomi.jpg 'cat' 'dog' 'human' 'woman' 'girl'
 次の画像を解析します。：　 nozomi.jpg
 次のラベルの該当確率を推定します。　：　 ['cat', 'dog', 'human', 'woman', 'girl']
 ラベル名： cat   該当確率： 0.0%
@@ -116,11 +115,11 @@ electron@diynoMacBook-Pro DALL-E_Python3_Script % python3 display_textlabelprob_
 ラベル名： human   該当確率： 4.0%
 ラベル名： woman   該当確率： 48.0%
 ラベル名： girl   該当確率： 48.0%
-electron@diynoMacBook-Pro DALL-E_Python3_Script %
+DALL-E_Python3_Script %
 ```
 
 ```bash:Terminal
-electron@diynoMacBook-Pro DALL-E_Python3_Script % python3 display_textlabelprob_on_image.py --image_file nozomi.jpg 'cute' 'beautiful' 'elegant' 'awful' 'boyish' 'big' 'small'       
+DALL-E_Python3_Script % python3 display_textlabelprob_on_image.py --image_file nozomi.jpg 'cute' 'beautiful' 'elegant' 'awful' 'boyish' 'big' 'small'       
 次の画像を解析します。：　 nozomi.jpg
 次のラベルの該当確率を推定します。　：　 ['cute', 'beautiful', 'elegant', 'awful', 'boyish', 'big', 'small']
 ラベル名： cute   該当確率： 15.0%
@@ -130,11 +129,11 @@ electron@diynoMacBook-Pro DALL-E_Python3_Script % python3 display_textlabelprob_
 ラベル名： boyish   該当確率： 1.0%
 ラベル名： big   該当確率： 1.0%
 ラベル名： small   該当確率： 4.0%
-electron@diynoMacBook-Pro DALL-E_Python3_Script %
+DALL-E_Python3_Script %
 ```
 
 ```bash:Terminal
-electron@diynoMacBook-Pro DALL-E_Python3_Script %python3 display_textlabelprob_on_image.py --image_file nozomi.jpg 'cute' 'awful' 'boyish' 'big' 'small'          
+DALL-E_Python3_Script %python3 display_textlabelprob_on_image.py --image_file nozomi.jpg 'cute' 'awful' 'boyish' 'big' 'small'          
 次の画像を解析します。：　 nozomi.jpg
 次のラベルの該当確率を推定します。　：　 ['cute', 'awful', 'boyish', 'big', 'small']
 ラベル名： cute   該当確率： 72.0%
@@ -142,7 +141,7 @@ electron@diynoMacBook-Pro DALL-E_Python3_Script %python3 display_textlabelprob_o
 ラベル名： boyish   該当確率： 6.0%
 ラベル名： big   該当確率： 3.0%
 ラベル名： small   該当確率： 18.0%
-electron@diynoMacBook-Pro DALL-E_Python3_Script %
+DALL-E_Python3_Script %
 ```
 
 ## ソースコード
