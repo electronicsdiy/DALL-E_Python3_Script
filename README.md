@@ -1,13 +1,13 @@
-##　使い方
+## 使い方
 
-####　GitHubから資源を取得
+### GitHubから資源を取得
 
 ```bash:Terminal
 electron@diynoMacBook-Pro Desktop % git clone 
 electron@diynoMacBook-Pro Desktop % 
 ```
 
-####　取得したディレクトリに移動
+### 取得したディレクトリに移動
 
 ```bash:Terminal
 electron@diynoMacBook-Pro Desktop % cd DALL-E_Python3_Script
@@ -17,7 +17,7 @@ electron@diynoMacBook-Pro DALL-E_Python3_Script %
 ```
 
 
-####　画像ファイルを用意
+### 画像ファイルを用意
 
 ```bash:Terminal
 electron@diynoMacBook-Pro DALL-E_Python3_Script % ls
@@ -26,7 +26,7 @@ display_textlabelprob_on_image.py	nozomi.jpg
 electron@diynoMacBook-Pro DALL-E_Python3_Script %
 ```
 
-#####　（ 画像１ ）
+### （ 画像１ ）
 
 - 画像は、取り扱いたい任意の画像ファイルを用意してください。
  
@@ -38,7 +38,7 @@ electron@diynoMacBook-Pro DALL-E_Python3_Script % open doraemon.jpg
 
 ![](https://user-images.githubusercontent.com/87643752/130586549-beb07952-24ae-418c-beab-1c14ca611e87.png)
 
-#####　（ 画像２ ）
+### （ 画像２ ）
 
 - 画像は、取り扱いたい任意の画像ファイルを用意してください。
 
@@ -51,7 +51,7 @@ electron@diynoMacBook-Pro DALL-E_Python3_Script %
 ![](https://user-images.githubusercontent.com/87643752/130586573-035a2380-acdb-4385-9cd1-bec76ee705e9.png)
 
 
-####　スクリプトを実行 （ ドラえもん画像 ）
+### スクリプトを実行 （ ドラえもん画像 ）
 
 - コマンドライン引数：第１引数に、画像ファイルを相対パスで渡す
 - コマンドライン引数：第２引数以降に、１つ以上のラベルを文字列で与える
@@ -81,7 +81,7 @@ raccoon dog   該当確率： 1.0%
 electron@diynoMacBook-Pro DALL-E_Python3_Script %
 ```
 
-####　スクリプトを実行 （ 佐々木希の画像 ）
+### スクリプトを実行 （ 佐々木希の画像 ）
 
 ```bash:Terminal
 electron@diynoMacBook-Pro DALL-E_Python3_Script % python3 display_textlabelprob_on_image.py --image_file nozomi.jpg 'cat' 'dog' 'human' 'woman' 'girl'
@@ -121,7 +121,7 @@ electron@diynoMacBook-Pro DALL-E_Python3_Script %python3 display_textlabelprob_o
 electron@diynoMacBook-Pro DALL-E_Python3_Script %
 ```
 
-##　ソースコード
+## ソースコード
 
 ```Python3:display_textlabelprob_on_image.py
 import argparse
