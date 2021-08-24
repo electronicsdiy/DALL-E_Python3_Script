@@ -1,6 +1,6 @@
-##使い方
+## 使い方
 
-###（画像１）
+### （画像１）
  
 ```bash:Terminal
 electron@diynoMacBook-Pro Desktop % ls doraemon.jpg                                                          
@@ -36,7 +36,7 @@ raccoon dog   該当確率： 1.0%
 electron@diynoMacBook-Pro Desktop %
 ```
 
-###（画像２） 
+### （画像２） 
 
 ```bash:Terminal
 electron@diynoMacBook-Pro Desktop % open nozomi.jpg 
@@ -86,7 +86,7 @@ electron@diynoMacBook-Pro Desktop %
 
 
 
-##ソースコード
+## ソースコード
 
 ```Python3: display_textlabeLprob_on_image.py
 import argparse
