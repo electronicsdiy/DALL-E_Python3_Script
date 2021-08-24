@@ -21,7 +21,7 @@ electron@diynoMacBook-Pro Desktop %
 ```
 
 ```bash:Terminal
-electron@diynoMacBook-Pro Desktop % python3 display_textlabeLprob_on_image.py --image_file doraemon.jpg 'cat' 'dog' 'human' 'pig' '
+electron@diynoMacBook-Pro Desktop % python3 display_textlabelprob_on_image.py --image_file doraemon.jpg 'cat' 'dog' 'human' 'pig' '
 raccoon dog' 'house' 'robot' 'sky'
 次の画像を解析します。：　 doraemon.jpg
 次のラベルの該当確率を推定します。　：　 ['cat', 'dog', 'human', 'pig', '\nraccoon dog', 'house', 'robot', 'sky']
@@ -47,7 +47,7 @@ electron@diynoMacBook-Pro Desktop %
 
 
 ```bash:Terminal
-electron@diynoMacBook-Pro Desktop % python3 display_textlabeLprob_on_image.py --image_file nozomi.jpg 'cat' 'dog' 'human' 'woman' 'girl'
+electron@diynoMacBook-Pro Desktop % python3 display_textlabelprob_on_image.py --image_file nozomi.jpg 'cat' 'dog' 'human' 'woman' 'girl'
 次の画像を解析します。：　 nozomi.jpg
 次のラベルの該当確率を推定します。　：　 ['cat', 'dog', 'human', 'woman', 'girl']
 ラベル名： cat   該当確率： 0.0%
@@ -59,7 +59,7 @@ electron@diynoMacBook-Pro Desktop %
 ```
 
 ```bash:Terminal
-electron@diynoMacBook-Pro Desktop % python3 display_textlabeLprob_on_image.py --image_file nozomi.jpg 'cute' 'beautiful' 'elegant' 'awful' 'boyish' 'big' 'small'       
+electron@diynoMacBook-Pro Desktop % python3 display_textlabelprob_on_image.py --image_file nozomi.jpg 'cute' 'beautiful' 'elegant' 'awful' 'boyish' 'big' 'small'       
 次の画像を解析します。：　 nozomi.jpg
 次のラベルの該当確率を推定します。　：　 ['cute', 'beautiful', 'elegant', 'awful', 'boyish', 'big', 'small']
 ラベル名： cute   該当確率： 15.0%
@@ -73,7 +73,7 @@ electron@diynoMacBook-Pro Desktop %
 ```
 
 ```bash:Terminal
-electron@diynoMacBook-Pro Desktop %python3 display_textlabeLprob_on_image.py --image_file nozomi.jpg 'cute' 'awful' 'boyish' 'big' 'small'          
+electron@diynoMacBook-Pro Desktop %python3 display_textlabelprob_on_image.py --image_file nozomi.jpg 'cute' 'awful' 'boyish' 'big' 'small'          
 次の画像を解析します。：　 nozomi.jpg
 次のラベルの該当確率を推定します。　：　 ['cute', 'awful', 'boyish', 'big', 'small']
 ラベル名： cute   該当確率： 72.0%
@@ -91,7 +91,7 @@ electron@diynoMacBook-Pro Desktop %
 
 ## ソースコード
 
-```Python3: display_textlabeLprob_on_image.py
+```Python3:display_textlabelprob_on_image.py
 import argparse
 from PIL import Image
 import requests
