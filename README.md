@@ -17,6 +17,10 @@ Terminalで次の１行を入力して、エンターキーを押すと推論処
 
 ### **（ ラベル名：　複数指定 ）**
 
+>```bash:Terminal
+>% python3 display_textlabelprob_on_image.py --image_file xxx.jpg 'cat' 'dog' 'egg'
+>```
+
 
 ## 使い方
 
